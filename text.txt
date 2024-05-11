@@ -1,1 +1,11 @@
 ciaooooo
+
+
+sed
+w
+dw
+d
+ewd
+ewd
+we
+dw
