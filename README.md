@@ -226,11 +226,90 @@ sudo docker-compose up -d
 sudo docker ps
 ```
 
-finished, what a struggle eh? 
+### finished for the moment, what a struggle eh? 
 
-   
-- now all you have to do is configure your database session
+# configuration MariaDB and database 🗃️
+
+- all you have to do is configure your database session
     - I used MariaDB to connect a database that included a table for managing users who can access my website.
+
+ 1. for the last time, return to your docker-compose.yml file and replace again the content whit these instructions
+```bash
+ version: "3.9"
+ services:
+    nginx:
+      build: ./nginx/
+      ports:
+        - 80:80
+   
+      volumes:
+          - ./php_code/:/var/www/html/
+ 
+    php:
+      build: ./php_code/
+      expose:
+        - 9000
+      volumes:
+         - ./php_code/:/var/www/html/
+ 
+ 
+    db:    
+       image: mariadb  
+       volumes: 
+         -    mysql-data:/var/lib/mysql
+       environment:  
+        MYSQL_ROOT_PASSWORD: mariadb
+        MYSQL_DATABASE: AWS
+ 
+ 
+ volumes:
+     mysql-data:
+```
+
+2. launch the docker conteiners
+```bash
+sudo docker-compose up -d
+```
+
+3. create a CLI inside MariaDB
+```bash
+sudo docker exec -it docker-project-db-1 /bin/sh
+```
+
+4. access to mariaDB as the root user
+```bash
+mariadb -u root -pmariadb
+```
+- Remember your credentials!
+
+5. create a user for the database
+```bash
+CREATE USER 'email'@'%' IDENTIFIED BY "password";
+```
+
+6. re-create a CLI inisde of MariaDB
+```bash
+sudo docker exec -it docker-project-db-1 /bin/sh
+```
+
+7. re-access to mariaDB as the root user
+```bash
+mariadb -u root -pmariadb
+```
+
+8. in the end, create a new database and call it however you want
+- I advise you to remember how you called it, for whene you will program the site 
+```bash
+CREATE DATABASE site;
+MariaDB [site]> 
+```
+
+9. create the tables of your database with a sql's query, as for the example
+```bash
+CREATE TABLE example(email INT, password VARCHAR(50));
+```
+
+### easy! 🚀
  
 ## Update the repository on your AWS project 🩻
 1. move to the folder of your repository
