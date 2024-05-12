@@ -1,5 +1,5 @@
 <?php
-    require 'connet.php';
+    require '/aws_progetto/php/connet.php';
     session_start();
 ?>
 
