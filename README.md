@@ -2,16 +2,16 @@
 
 
 
-You are currently reading the README of my AWS project where I'm committed to implementing Docker on AWS to create a fully optimized website! 🌍
+You are currently reading the README of my AWS project where I committed to implementing Docker on AWS to create a fully optimized website! 🌍
 
-## Project Overview
+## Project overview
 
-The goal of this project is to leverage AWS cloud services to create a virtual server hosting a single-page website. The entire stack including web server, database, and PHP applications will operate within Docker containers. 🧠
+The goal of this project was to leverage AWS cloud services to create a virtual server that hosts a single-page website. The entire stack, including web servers, databases, and PHP applications, runs inside Docker containers. 🧠
 
-- The website will be accessible only via a secure HTTPS connection using a self-signed certificate.
-- A login form will greet users, ensuring secure authentication before granting access to the website content.
-- The website will be developed following HTML5 and CSS3 standards. 🖥️🖥
-
+- The website is only accessible via a secure HTTPS connection using a self-signed certificate.
+- A login form will welcome users, ensuring secure authentication before granting access to the website content.
+- The website is developed following HTML5 and CSS3 standards. 🖥️🖥
+- 
 ### Technologies Used
 
 - AWS Cloud
