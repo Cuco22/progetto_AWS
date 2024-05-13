@@ -8,7 +8,7 @@ $conn=new mysqli($hostname,$username,$password,$database);
 
 if ($conn->connect_error) {
     
-  die("Processo fallito: " . $conn->connect_error);
+  die("non riesco a connettermi!! errore -> " . $conn->connect_error);
 
 } else{
   //echo 'ciao'
