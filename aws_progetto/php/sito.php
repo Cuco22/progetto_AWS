@@ -20,7 +20,9 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         <p>Benvenuto nel mio sito basato su AWS.</p>
         <p>Per ulteriori informazioni, visita il mio GitHub. <a href="https://github.com/Cuco22/progetto_AWS" id="github-link" target="_blank"> Entra da qui! 😀</a>.</p>
         <hr>
+        <p>Per visualzzare nello specifico come ho fatto a configurare le impostazioni e il server su aws, <a href="">clicca qui!</a>.</p>
 
+        
         <h2>Ti va di lasciare un commento? 🐦‍⬛</h2>
         <br>
         <br>
