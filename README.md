@@ -331,5 +331,5 @@ Link to instagram:  https://www.instagram.com/lucaa.cuco/
 - Ho 18 anni e sono italiano. 🤌🏻🍝
 
 
-<img src="/aws_progetto/awsLogo.jpg"></img>
+<img src="/aws_progetto/css/Logo_of_Github.jpg"></img>
 
