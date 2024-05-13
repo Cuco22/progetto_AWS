@@ -330,3 +330,6 @@ Link to instagram:  https://www.instagram.com/lucaa.cuco/
 - Mi chiamo Luca Cuconato e frequento l'ultimo anno di scuole superiori presso l'istituto Antonio Bernocchi di Legnano, indirizzo informatica e telecomunicazioni. 🌐
 - Ho 18 anni e sono italiano. 🤌🏻🍝
 
+
+<img src="/aws_progetto/awsLogo.jpg"></img>
+
