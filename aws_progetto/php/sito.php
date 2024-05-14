@@ -1,4 +1,5 @@
 <?php
+require 'connect.php';
 session_start();
 
 $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['email'] : 'Utente';
