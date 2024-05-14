@@ -2,7 +2,7 @@
 $hostname= "db";
 $username= "root";
 $password= "mariadb";
-$database= "AWS";
+$database= "database";
 
 $conn=new mysqli($hostname,$username,$password,$database);
 
