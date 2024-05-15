@@ -1,4 +1,5 @@
 <?php
+echo 'ciaooo';
 include 'connect.php';
 session_start();        //avvio della sessione          
 
