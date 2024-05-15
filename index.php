@@ -12,6 +12,6 @@ if ($conn->connect_error) {
   die("non riesco a connettermi!! errore -> " . $conn->connect_error);
 
 } else{
-  header("Location: lg.php");
+  header("Location: ../lg.php");
 }
 ?>
