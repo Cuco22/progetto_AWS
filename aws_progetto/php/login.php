@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+require 'connect.php';
 session_start();        //avvio della sessione          
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
