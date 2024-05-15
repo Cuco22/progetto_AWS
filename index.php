@@ -1,10 +1,11 @@
 <?php
-$hostname= "db";
-$username= "root";
-$password= "mariadb";
-$database= "database";
+$host = 'db';
+$username = 'luca';
+$password = 'password';
+$database = 'database';
 
-$conn=new mysqli($hostname,$username,$password,$database);
+// Crea una connessione al database
+$conn = mysqli_connect($host, $username, $password, $database);
 
 if ($conn->connect_error) {
     
