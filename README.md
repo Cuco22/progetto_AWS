@@ -322,7 +322,7 @@ cd docker-project/php_code/
 git pull
 ```
 
-## finisched!! 🎉🎉
+## finished!! 🎉🎉
 
 
 # About me 👤
