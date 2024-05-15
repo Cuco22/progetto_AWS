@@ -1,23 +1,16 @@
 <?php
-include 'aws_progetto/php/connect.php';
-session_start();
-?>
+$hostname= "db";
+$username= "root";
+$password= "mariadb";
+$database= "database";
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login cliente</title>
-    <link rel="stylesheet" href="/aws_progetto/css/style.css">
-</head>
-<body>
-    <h1>LOGIN CLIENTE</h1>
-    <form method="post" action="/aws_progetto/php/login.php">
-        <input type="email" name="email" placeholder="email" required>
-        <input type="password" name="password" placeholder="password" required>
-		<br>
-        <input type="submit" value="login">
-    </form>
-</body>
-</html>
+$conn=new mysqli($hostname,$username,$password,$database);
+
+if ($conn->connect_error) {
+    
+  die("non riesco a connettermi!! errore -> " . $conn->connect_error);
+
+} else{
+  header("Location: /aws_progetto/php/login.php");
+}
+?>
