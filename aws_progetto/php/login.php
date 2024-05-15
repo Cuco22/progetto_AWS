@@ -1,5 +1,5 @@
 <?php
-require 'connect.php';
+require '../aws_progetto/php/connect.php';
 session_start();        //avvio della sessione          
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
