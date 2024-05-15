@@ -1,5 +1,6 @@
 <?php
-    session_start();
+include '/aws_progetto/php/connect.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
