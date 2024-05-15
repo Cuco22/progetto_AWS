@@ -1,6 +1,5 @@
 <?php
-include '/aws_progetto/php/connect.php';
-
+include 'aws_progetto/php/connect.php';
 session_start();
 ?>
 
