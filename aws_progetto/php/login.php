@@ -9,8 +9,6 @@ if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $password = md5($password);
-
     //vedo se l'utente esiste nel db
     $query = "SELECT * FROM utente WHERE username = '$email' AND password = '$password'";
     $result = $conn->query($query);
