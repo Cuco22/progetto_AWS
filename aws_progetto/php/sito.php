@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include '../connect.php';
 session_start();
 
 $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['email'] : 'Utente';
@@ -11,8 +11,8 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito progetto aws</title>
-    <link rel="stylesheet" href="/aws_progetto/css/style_custom.css">
-    <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style_custom.css">
+    <link rel="icon" href="../css/awsLogo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -27,7 +27,6 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         <br>
         
         <h2>Ti va di lasciare un commento? 🐦‍⬛</h2>
-        <br>
         <br>
         <form id="commentForm">
             <textarea id="commentInput" rows="4" cols="50" placeholder="Scrivi qui il tuo commento..."></textarea>
