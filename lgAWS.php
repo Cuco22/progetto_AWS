@@ -4,7 +4,7 @@ require 'connect.php';
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
-    header("Location: lg.php");
+    header("Location: index.php");
     exit();
 }
 
