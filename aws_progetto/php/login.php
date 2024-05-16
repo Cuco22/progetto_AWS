@@ -1,31 +1,33 @@
 <?php
-include 'connect.php';
-session_start();        //avvio della sessione          
+require '../index.php';
+session_start();        
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
-    echo "credenziali di accesso non correttamente impostate!";
-
-} else {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    //vedo se l'utente esiste nel db
-    $query = "SELECT * FROM utente WHERE username = '$email' AND password = '$password'";
-    $result = $conn->query($query);
-
-    if ($result->num_rows > 0) {
-        $_SESSION['logged'] = true;
-        $_SESSION['email'] = $email;
-        $_SESSION['password'] = $password;
-        header("Location: sito.php");
-        
-
-    } else {
-        $_SESSION['error_message'] = "l'utente non esiste! \nnon è possibile eseguire il login :(";
-        header("Location: ../index.php"); 
-
-    }
-
-    $conn->close();         //chiusura connessione
+    $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
+    header("Location: ../lg.php");
+    exit();
 }
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// Hash la password
+$password_hashed = md5($password);
+
+// Verifica se l'utente esiste nel database
+$query = "SELECT * FROM utente WHERE username = '$email' AND password = '$password_hashed'";
+$result = $conn->query($query);
+
+if ($result->num_rows > 0) {
+    $_SESSION['logged'] = true;
+    $_SESSION['email'] = $email;
+    header("Location: sito.php");
+    exit();
+} else {
+    $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
+    header("Location: ../lg.php");
+    exit();
+}
+
+$conn->close();         
 ?>
