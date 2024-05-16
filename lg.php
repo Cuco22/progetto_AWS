@@ -13,7 +13,7 @@ include 'index.php';
 </head>
 <body>
     <h1>LOGIN CLIENTE</h1>
-    <form method="post" action="/asw_progetto/php/login.php">
+    <form method="post" action="aws_progetto/php/login.php">
         <input type="email" name="email" placeholder="email" required>
         <input type="password" name="password" placeholder="password" required>
 		<br>
