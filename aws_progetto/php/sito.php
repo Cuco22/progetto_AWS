@@ -11,8 +11,8 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito progetto aws</title>
-    <link rel="stylesheet" href="../aws_progetto/css/style_custom.css">
-    <link rel="icon" href="../aws_progetto/css/awsLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/aws_progetto/css/style_custom.css">
+    <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -32,7 +32,6 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         <form id="commentForm">
             <textarea id="commentInput" rows="4" cols="50" placeholder="Scrivi qui il tuo commento..."></textarea>
             <br>
-            <br>
             <button type="submit">Invia</button>
         </form>
         <div id="commentSection">
@@ -40,6 +39,6 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         </div>
     </div>
 
-    <script src="../aws_progetto/js/js.js"></script>
+    <script src="/aws_progetto/js/js.js"></script>
 </body>
 </html>
