@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     exit();
 } else {
     $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
-    header("Location: aws_progetto/php/sito.php");
+    header("Location: sitoAWS.php");
     exit();
 }
 
