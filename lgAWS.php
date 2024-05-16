@@ -1,10 +1,10 @@
 <?php
-require '../index.php';
+require 'index.php';
 session_start();        
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
-    header("Location: ../lg.php");
+    header("Location: lg.php");
     exit();
 }
 
@@ -21,11 +21,11 @@ $result = $conn->query($query);
 if ($result->num_rows > 0) {
     $_SESSION['logged'] = true;
     $_SESSION['email'] = $email;
-    header("Location: sito.php");
+    header("Location: aws_progetto/php/sito.php");
     exit();
 } else {
     $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
-    header("Location: ../lg.php");
+    header("Location: lg.php");
     exit();
 }
 
