@@ -13,6 +13,6 @@ if ($conn->connect_error) {
 
 } else{
         echo 'ciaoooo sono connesso al database';
-      header("Location: ../lg.php");
+      header("Location: lg.php");
 }
 ?>
