@@ -12,7 +12,7 @@ if ($conn->connect_error) {
   die("non riesco a connettermi!! errore -> " . $conn->connect_error);
 
 } else{
-        echo 'ciaoooo sono connesso al database';
-      //header("Location: lg.php");
+   //echo 'ciaoooo sono connesso al database';
+  //header("Location: lg.php");
 }
 ?>
