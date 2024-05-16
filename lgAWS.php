@@ -1,6 +1,6 @@
 <?php
 require 'index.php';
-session_start();        
+//session_start();        
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
 } else {
     $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
     header("Location: lg.php");
-    exit();
+    //exit();
 }
 
 $conn->close();         
