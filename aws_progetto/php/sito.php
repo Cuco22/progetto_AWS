@@ -38,6 +38,6 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         </div>
     </div>
 
-    <script src="/aws_progetto/js/js.js"></script>
+    <script src="../aws_progetto/js/js.js"></script>
 </body>
 </html>
