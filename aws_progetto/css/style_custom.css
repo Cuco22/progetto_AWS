@@ -1,1 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #007bff; /* Colore blu per l'intestazione */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333333; /* Colore testo principale */
+    margin-bottom: 20px;
+}
+
+.success-message {
+    color: #007bff; /* Colore blu per i messaggi di successo */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 200px; 
+    height: auto; 
+    margin-top: 20px;
+    border-radius: 8px;
+}
 
