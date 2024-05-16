@@ -18,17 +18,18 @@ body {
 
 h1 {
     font-size: 32px;
-    color: #333333;
+    color: #007bff; /* Colore blu per l'intestazione */
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
-    color: #666666;
+    color: #333333; /* Colore testo principale */
     margin-bottom: 20px;
 }
 
 .success-message {
-    color: #007bff;
+    color: #007bff; /* Colore blu per i messaggi di successo */
 }
 
 a {
