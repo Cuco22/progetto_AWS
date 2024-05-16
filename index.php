@@ -1,6 +1,4 @@
 <?php
-ob_start(); // Avvia il buffering dell'output
-
 $host = 'db';
 $username = 'luca';
 $password = 'password';
@@ -17,6 +15,4 @@ if ($conn->connect_error) {
     header("Location: lg.php");
     exit(); // Assicurati di uscire dopo il reindirizzamento
 }
-
-ob_end_flush(); // Termina e invia il buffer di output
 ?>
