@@ -11,7 +11,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito progetto aws</title>
-    <link rel="stylesheet" href="/aws_progetto/css/style_custom.css">
+    <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
 </head>
 
