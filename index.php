@@ -9,6 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login cliente</title>
+	<link rel="icon" href="/aws_progetto/css/icona login.png" type="image/x-icon">
     <link rel="stylesheet" href="/aws_progetto/css/style.css">
 </head>
 <body>
