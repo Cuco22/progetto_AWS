@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-//session_start();        
+session_start();
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
@@ -29,5 +29,5 @@ if ($result->num_rows > 0) {
     exit();
 }
 
-$conn->close();         
+$conn->close();
 ?>
