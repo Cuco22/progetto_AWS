@@ -21,7 +21,7 @@ unset($_SESSION['error_message']);
             transform: translateX(-50%);
             background-color: white;
             color: black;
-            border: 2px solid red;
+            border: 2px solid blue;
             padding: 20px;
             z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
