@@ -19,7 +19,7 @@ $query = "SELECT * FROM utente WHERE username = '$email' AND password = '$passwo
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    $_SESSION['logged'] = true;
+    $_SESSION['logged'] === true;
     $_SESSION['email'] = $email;
     header("Location: sitoAWS.php");
     // exit();
