@@ -41,7 +41,7 @@ unset($_SESSION['error_message']);
     <?php endif; ?>
     
     <!-- Il tuo modulo di login va qui -->
-    <form action="login.php" method="post">
+    <form action="lgAWS.php" method="post">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <label for="password">Password:</label>
