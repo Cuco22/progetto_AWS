@@ -9,6 +9,8 @@ unset($_SESSION['error_message']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="icon" href="/aws_progetto/css/icona login.png" type="image/x-icon">
+    <link rel="stylesheet" href="/aws_progetto/css/style.css">
     <style>
         .error-popup {
             display: none;
@@ -30,7 +32,7 @@ unset($_SESSION['error_message']);
     </style>
 </head>
 <body>
-    <?php if ($error_message): ?>
+    <?php if (!$error_message): ?>
         <div class="error-popup" id="errorPopup"><?php echo $error_message; ?></div>
         <script>
             document.getElementById('errorPopup').style.display = 'block';
@@ -40,13 +42,12 @@ unset($_SESSION['error_message']);
         </script>
     <?php endif; ?>
     
-    <!-- Il tuo modulo di login va qui -->
-    <form action="lgAWS.php" method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
+    <h1>LOGIN CLIENTE</h1>
+    <form method="post" action="lgAWS.php">
+        <input type="email" name="email" placeholder="email" required>
+        <input type="password" name="password" placeholder="password" required>
+		<br>
+        <input type="submit" value="login">
     </form>
 </body>
 </html>
