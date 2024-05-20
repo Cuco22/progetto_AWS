@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-session_start();
+session_start(); // Assicurati che session_start() sia presente
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
@@ -11,9 +11,10 @@ if (!isset($_POST['email']) || !isset($_POST['password'])) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+// Hash la password
 $password_hashed = md5($password);
 
-//verifica se l'utente esiste nel database
+// Verifica se l'utente esiste nel database
 $query = "SELECT * FROM utente WHERE username = '$email' AND password = '$password_hashed'";
 $result = $conn->query($query);
 
@@ -23,8 +24,9 @@ if ($result->num_rows > 0) {
     header("Location: sitoAWS.php");
     exit();
 } else {
-    echo "L'utente non esiste! Non è possibile eseguire il login :(";
-    // header("Location: index.php");
+    $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
+    header("Location: index.php");
+    exit();
 }
 
 $conn->close();
