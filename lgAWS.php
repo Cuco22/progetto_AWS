@@ -22,11 +22,11 @@ if ($result->num_rows > 0) {
     $_SESSION['logged'] = true;
     $_SESSION['email'] = $email;
     header("Location: sitoAWS.php");
-    exit();
+    // exit();
 } else {
     $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
     header("Location: index.php");
-    exit();
+   // exit();
 }
 
 $conn->close();
