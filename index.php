@@ -54,3 +54,41 @@ unset($_SESSION['error_message']);
     </form>
 </body>
 </html>
+
+<?php
+require 'connect.php';
+session_start();
+
+if (!isset($_POST['email']) || !isset($_POST['password'])) {
+    $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
+    header("Location: index.php");
+    exit();
+}
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// Verifica se l'utente esiste nel database
+$query = "SELECT * FROM utente WHERE username = '$email'";
+$result = $conn->query($query);
+
+if ($result->num_rows > 0) {
+    $user = $result->fetch_assoc();
+    if (password_verify($password, $user['password'])) {
+        $_SESSION['logged'] = true;
+        $_SESSION['email'] = $email;
+        header("Location: sitoAWS.php");
+        exit();
+    } else {
+        $_SESSION['error_message'] = "Password errata! Non è possibile eseguire il login :(";
+        header("Location: index.php");
+        exit();
+    }
+} else {
+    $_SESSION['error_message'] = "L'utente non esiste! Non è possibile eseguire il login :(";
+    header("Location: index.php");
+    exit();
+}
+
+$conn->close();
+?>
