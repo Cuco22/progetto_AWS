@@ -11,7 +11,7 @@ if (!isset($_POST['email']) || !isset($_POST['password'])) {
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-// Hash la password
+//hash la password
 $password_hashed = md5($password);
 
 //verifico se l'utente esiste nel database
