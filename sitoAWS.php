@@ -11,11 +11,12 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito progetto aws</title>
+    <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e9ecef;  /* Colore di sfondo per il body */
+            background-color: #e9ecef;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,25 +27,25 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         .main-container {
             text-align: center;
             padding: 30px;
-            background-color: #ffffff;  /* Colore di sfondo per il contenitore principale */
+            background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             font-size: 32px;
-            color: #007bff; /* Colore blu per l'intestazione */
+            color: #007bff;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 18px;
-            color: #333333; /* Colore testo principale */
+            color: #333333;
             margin-bottom: 20px;
         }
 
         .success-message {
-            color: #007bff; /* Colore blu per i messaggi di successo */
+            color: #007bff;
         }
 
         a {
@@ -63,13 +64,12 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
             border-radius: 8px;
         }
 
-        /* Stile per il messaggio di errore */
         .error-message {
-            color: #dc3545;  /* Colore rosso per i messaggi di errore */
+            color: #dc3545;
             margin-bottom: 20px;
             font-weight: bold;
             font-size: 18px;
-            background-color: #f8d7da;  /* Colore di sfondo per i messaggi di errore */
+            background-color: #f8d7da;
             padding: 10px;
             border-radius: 8px;
         }
@@ -100,6 +100,39 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         </div>
     </div>
 
-    <script src="/aws_progetto/js/js.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var emailDisplay = document.getElementById('emailDisplay');
+            var email = emailDisplay.getAttribute('data-email');
+
+            // Trova l'indice del simbolo '@' nell'indirizzo email
+            var atIndex = email.indexOf('@');
+
+            if (atIndex !== -1) {
+                // Estrae la parte di indirizzo email prima del simbolo '@'
+                var displayText = email.substring(0, atIndex);
+                emailDisplay.textContent = displayText;
+            }
+
+            var commentForm = document.getElementById('commentForm');
+            var commentInput = document.getElementById('commentInput');
+            var commentSection = document.getElementById('commentSection');
+
+            // Impostazione zona commenti
+            commentForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                var commentText = commentInput.value.trim();
+                if (commentText !== '') {
+                    var newComment = document.createElement('p');
+                    newComment.textContent = commentText;
+
+                    commentSection.appendChild(newComment);
+
+                    commentInput.value = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
