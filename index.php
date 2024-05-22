@@ -11,25 +11,6 @@ unset($_SESSION['error_message']);
     <title>Login</title>
     <link rel="icon" href="/aws_progetto/css/icona login.png" type="image/x-icon">
     <link rel="stylesheet" href="/aws_progetto/css/style.css">
-    <style>
-        .error-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: red;
-            color: white;
-            padding: 20px;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: slideDown 0.5s forwards;
-        }
-        @keyframes slideDown {
-            from { top: -50px; }
-            to { top: 0; }
-        }
-    </style>
 </head>
 <body>
     <h1>LOGIN CLIENTE</h1>
