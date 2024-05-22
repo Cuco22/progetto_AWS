@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
 	background-color: rgb(37, 34, 34);
 	overflow-x: hidden;
@@ -23,7 +24,6 @@ body {
 .section-header {
     width: 100%;
     min-height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
