@@ -10,7 +10,7 @@ body {
     margin: 0;
 }
 
-background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(110, 0, 0)), url("");
+background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(110, 0, 0)), url("/aws_progetto/php/sfondoSitoAWS.jpg");
 }
 
 .main-container {
