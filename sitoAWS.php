@@ -10,13 +10,13 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito progetto aws</title>
+    <title>Sito Progetto AWS</title>
     <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e9ecef;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,52 +26,76 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
 
         .main-container {
             text-align: center;
-            padding: 30px;
+            padding: 40px;
             background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
         }
 
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             color: #007bff;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 18px;
-            color: #333333;
+            color: #555;
             margin-bottom: 20px;
-        }
-
-        .success-message {
-            color: #007bff;
         }
 
         a {
             color: #007bff;
             text-decoration: none;
+            font-weight: bold;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
-        img {
-            max-width: 200px; 
-            height: auto; 
-            margin-top: 20px;
-            border-radius: 8px;
+        h2 {
+            font-size: 28px;
+            color: #333;
+            margin-top: 40px;
         }
 
-        .error-message {
-            color: #dc3545;
-            margin-bottom: 20px;
-            font-weight: bold;
-            font-size: 18px;
-            background-color: #f8d7da;
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
             padding: 10px;
             border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #commentSection p {
+            text-align: left;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -80,24 +104,17 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <div class="main-container">
         <h1>Ciao <span id="emailDisplay" data-email="<?php echo htmlspecialchars($email); ?>"></span>!</h1>
         <p>Benvenuto nel mio sito basato su AWS.</p>
-        <p>Per ulteriori informazioni, visita il mio GitHub. <a href="https://github.com/Cuco22/progetto_AWS" id="github-link" target="_blank"> Entra da qui! 😀</a>.</p>
+        <p>Per ulteriori informazioni, visita il mio GitHub. <a href="https://github.com/Cuco22/progetto_AWS" id="github-link" target="_blank">Entra da qui! 😀</a>.</p>
         <hr>
         <br>
-        <p>Per visualizzare nello specifico come ho fatto a configurare le impostazioni e il server su aws, <a href="https://github.com/Cuco22/progetto_AWS/blob/main/README.md">clicca qui!</a>.</p>
-        <br>
-        <br>
+        <p>Per visualizzare nello specifico come ho fatto a configurare le impostazioni e il server su AWS, <a href="https://github.com/Cuco22/progetto_AWS/blob/main/README.md">clicca qui!</a>.</p>
         
         <h2>Ti va di lasciare un commento? 🐦‍⬛</h2>
-        <br>
-        <br>
         <form id="commentForm">
             <textarea id="commentInput" rows="4" cols="50" placeholder="Scrivi qui il tuo commento..."></textarea>
-            <br>
             <button type="submit">Invia</button>
         </form>
-        <div id="commentSection">
-            
-        </div>
+        <div id="commentSection"></div>
     </div>
 
     <script>
