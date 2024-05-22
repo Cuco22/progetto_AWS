@@ -1,6 +1,6 @@
 <?php
 require 'connect.php';
-session_start(); // Assicurati che session_start() sia presente
+session_start();
 
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
     $_SESSION['error_message'] = "Credenziali di accesso non correttamente impostate!";
