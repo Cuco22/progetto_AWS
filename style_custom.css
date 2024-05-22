@@ -4,18 +4,15 @@
   background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(110, 0, 0)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
 }
 
+.section-header {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6) 20%,
-        rgba(28, 28, 28, 1) 80%,
-        rgba(28, 28, 28, 1)
-    ),
-    url("/aws_progetto/php/sfondoSitoAWS.jpg");
-    background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
