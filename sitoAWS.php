@@ -42,7 +42,10 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
             <textarea id="commentInput" rows="4" cols="50" placeholder="Scrivi qui il tuo commento..."></textarea>
             <button type="submit">Invia</button>
         </form>
-        <div id="commentSection"></div>
+        <br>
+        <div id="commentSection">
+            
+        </div>
     </div>
 
     <script>
