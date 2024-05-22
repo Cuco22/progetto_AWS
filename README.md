@@ -345,7 +345,7 @@ So I advise you to pay attention to what you type because it will be important f
 sudo docker run -d --name proxyapp --link nginx:proxyapp -p 443:443 -e DOMAIN=*.exemple.amazonaws.com -e TARGET_PORT=80 -e TARGET_HOST=nginx -e SSL_PORT=443 -v ~/ssl:/etc/nginx/certs --restart unless-stopped fsouza/docker-ssl-proxy
 ```
 
-What I reported is just an example. 
+- What I reported is just an example.  
 
 # FINISHED! (for real this time) 🆘🎆
 
