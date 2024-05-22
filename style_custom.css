@@ -11,7 +11,7 @@ body {
     background-color: rgba(145, 42, 184, 0.8); /* Tonality of purple */
     background-size: cover;
     overflow-x: hidden;
-    height: 100vh; /* Imposta l'altezza del body per occupare l'intera viewport */
+    height: 150vh; 
 }
 
 .section-header {
