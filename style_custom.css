@@ -7,15 +7,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(119, 41, 129); /* Stessa tonalità usata nell'header */
+    justify-content: flex-start; /* Allinea il contenuto all'inizio del body */
+    background-color: rgba(145, 42, 184, 0.8); /* Tonality of purple */
     background-size: cover;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    height: 100vh; /* Imposta l'altezza del body per occupare l'intera viewport */
 }
 
 .section-header {
     width: 100%;
     min-height: 60vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(119, 41, 129)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(145, 42, 184, 0.8)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -26,7 +28,6 @@ body {
     position: relative;
     z-index: 1; /* Per sovrapporre al contenuto principale */
 }
-
 
 .section-header .text-box {
     max-width: 600px;
@@ -65,14 +66,14 @@ body {
 .main-container {
     text-align: center;
     padding: 40px;
-    background-color: rgba(75, 0, 130, 0.8); /* Cambiato colore di sfondo */
+    background-color: rgba(145, 42, 184, 0.8); /* Background color */
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: 10vh; /* Regolato il margine superiore per separare dal titolo */
+    margin-top: -10vh; /* Adjusted top margin to separate from header */
     position: relative;
-    z-index: 0; /* Assicura che il contenuto principale sia dietro all'intestazione */
+    z-index: 0; /* Ensure main content is behind header */
 }
 
 h1 {
