@@ -14,6 +14,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
@@ -27,7 +28,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         .main-container {
             text-align: center;
             padding: 40px;
-            background-color: #ffffff;
+            background-color: #4b0082;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -36,18 +37,18 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
 
         h1 {
             font-size: 36px;
-            color: #007bff;
+            color: #fff;
             margin-bottom: 20px;
         }
 
         p {
             font-size: 18px;
-            color: #555;
+            color: #dcdcdc;
             margin-bottom: 20px;
         }
 
         a {
-            color: #007bff;
+            color: #ffa500;
             text-decoration: none;
             font-weight: bold;
         }
@@ -58,7 +59,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
 
         h2 {
             font-size: 28px;
-            color: #333;
+            color: #dcdcdc;
             margin-top: 40px;
         }
 
@@ -79,19 +80,20 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
-            background-color: #007bff;
+            background-color: #ffa500;
             color: #fff;
             font-size: 16px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #cc8400;
         }
 
         #commentSection p {
             text-align: left;
-            background-color: #f1f1f1;
+            background-color: #333;
+            color: #dcdcdc;
             padding: 10px;
             border-radius: 8px;
             margin-top: 10px;
@@ -121,12 +123,8 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         document.addEventListener('DOMContentLoaded', function() {
             var emailDisplay = document.getElementById('emailDisplay');
             var email = emailDisplay.getAttribute('data-email');
-
-            // Trova l'indice del simbolo '@' nell'indirizzo email
             var atIndex = email.indexOf('@');
-
             if (atIndex !== -1) {
-                // Estrae la parte di indirizzo email prima del simbolo '@'
                 var displayText = email.substring(0, atIndex);
                 emailDisplay.textContent = displayText;
             }
@@ -135,17 +133,13 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
             var commentInput = document.getElementById('commentInput');
             var commentSection = document.getElementById('commentSection');
 
-            // Impostazione zona commenti
             commentForm.addEventListener('submit', function(event) {
                 event.preventDefault(); 
-
                 var commentText = commentInput.value.trim();
                 if (commentText !== '') {
                     var newComment = document.createElement('p');
                     newComment.textContent = commentText;
-
                     commentSection.appendChild(newComment);
-
                     commentInput.value = '';
                 }
             });
