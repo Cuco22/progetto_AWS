@@ -15,7 +15,7 @@ $password = $_POST['password'];
 $password_hashed = md5($password);
 
 //verifico se l'utente esiste nel database
-$query = "SELECT * FROM utente WHERE email = '$email' AND password = '$password_hashed'";
+$query = "SELECT * FROM utente WHERE email = '$email' AND password = '$password'";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
