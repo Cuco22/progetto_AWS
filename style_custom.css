@@ -63,12 +63,12 @@ body {
 .main-container {
     text-align: center;
     padding: 40px;
-    background-color: #4b0082;
+    background-color: rgba(75, 0, 130, 0.8); /* Cambiato colore di sfondo */
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: -15vh; /* Adjusts positioning relative to the header */
+    margin-top: -15vh; /* Regola il posizionamento relativo all'intestazione */
 }
 
 h1 {
