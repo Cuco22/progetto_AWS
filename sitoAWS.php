@@ -13,7 +13,19 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <title>Sito Progetto AWS</title>
     <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
-    <body>
+</head>
+<body>
+    <section id="header" class="section-header">
+        <div class="text-box">
+            <h1 class="title">Sito Progetto AWS</h1>
+            <p class="subtitle">Benvenuto nel mio sito basato su AWS</p>
+            <div class="buttons-box">
+                <button onclick="location.href='index.php';">Home</button>
+                <button onclick="location.href='info.php';">Info</button>
+            </div>
+        </div>
+    </section>
+
     <div class="main-container">
         <h1>Ciao <span id="emailDisplay" data-email="<?php echo htmlspecialchars($email); ?>"></span>!</h1>
         <p>Benvenuto nel mio sito basato su AWS.</p>
