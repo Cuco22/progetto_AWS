@@ -8,9 +8,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200vh;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg") no-repeat center center fixed;
     background-size: cover;
+    overflow-x: hidden; /* Impedisce lo scrolling orizzontale */
 }
 
 .section-header {
@@ -24,6 +25,8 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
+    position: relative;
+    z-index: 1; /* Per sovrapporre al contenuto principale */
 }
 
 .section-header .text-box {
@@ -68,7 +71,9 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: 15vh; /* Regola il posizionamento relativo all'intestazione */
+    margin-top: -15vh; /* Regola il posizionamento relativo all'intestazione */
+    position: relative;
+    z-index: 0; /* Assicura che il contenuto principale sia dietro all'intestazione */
 }
 
 h1 {
