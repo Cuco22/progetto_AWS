@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e9ecef;  /* Colore di sfondo per il body */
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,51 +12,75 @@ body {
 
 .main-container {
     text-align: center;
-    padding: 30px;
-    background-color: #ffffff;  /* Colore di sfondo per il contenitore principale */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background-color: #4b0082;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
 h1 {
-    font-size: 32px;
-    color: #007bff; /* Colore blu per l'intestazione */
+    font-size: 36px;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
-    color: #333333; /* Colore testo principale */
+    color: #dcdcdc;
     margin-bottom: 20px;
 }
 
-.success-message {
-    color: #007bff; /* Colore blu per i messaggi di successo */
-}
-
 a {
-    color: #007bff;
+    color: #ffa500;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-img {
-    max-width: 200px; 
-    height: auto; 
-    margin-top: 20px;
-    border-radius: 8px;
+h2 {
+    font-size: 28px;
+    color: #dcdcdc;
+    margin-top: 40px;
 }
 
-/* Stile per il messaggio di errore */
-.error-message {
-    color: #dc3545;  /* Colore rosso per i messaggi di errore */
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #f8d7da;  /* Colore di sfondo per i messaggi di errore */
+form {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
     padding: 10px;
     border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc8400;
+}
+
+#commentSection p {
+    text-align: left;
+    background-color: #333;
+    color: #dcdcdc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
