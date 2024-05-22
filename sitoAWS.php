@@ -20,7 +20,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
             <h1 class="title">Sito Progetto AWS</h1>
             <p class="subtitle">Benvenuto nel mio sito basato su AWS</p>
             <div class="buttons-box">
-                <button onclick="location.href='index.php';">Home</button>
+                <button onclick="location.href='logout.php';">Logout</button>
                 <button onclick="location.href='info.php';">Info</button>
             </div>
         </div>
