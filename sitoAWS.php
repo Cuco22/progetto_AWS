@@ -11,8 +11,69 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito progetto aws</title>
-    <link rel="stylesheet" href="style_custom.css">
     <link rel="icon" href="/aws_progetto/css/awsLogo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;  /* Colore di sfondo per il body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;  /* Colore di sfondo per il contenitore principale */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #007bff; /* Colore blu per l'intestazione */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333333; /* Colore testo principale */
+            margin-bottom: 20px;
+        }
+
+        .success-message {
+            color: #007bff; /* Colore blu per i messaggi di successo */
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 200px; 
+            height: auto; 
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        /* Stile per il messaggio di errore */
+        .error-message {
+            color: #dc3545;  /* Colore rosso per i messaggi di errore */
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #f8d7da;  /* Colore di sfondo per i messaggi di errore */
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +83,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         <p>Per ulteriori informazioni, visita il mio GitHub. <a href="https://github.com/Cuco22/progetto_AWS" id="github-link" target="_blank"> Entra da qui! 😀</a>.</p>
         <hr>
         <br>
-        <p>Per visualzzare nello specifico come ho fatto a configurare le impostazioni e il server su aws, <a href="https://github.com/Cuco22/progetto_AWS/blob/main/README.md">clicca qui!</a>.</p>
+        <p>Per visualizzare nello specifico come ho fatto a configurare le impostazioni e il server su aws, <a href="https://github.com/Cuco22/progetto_AWS/blob/main/README.md">clicca qui!</a>.</p>
         <br>
         <br>
         
