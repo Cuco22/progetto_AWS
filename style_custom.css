@@ -9,46 +9,43 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg") no-repeat center center fixed;
     background-size: cover;
-}
-
-#header {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .section-header {
     width: 100%;
     min-height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.text-box {
     text-align: center;
     color: #fff;
 }
 
-.text-box .title {
+.section-header .text-box {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.section-header .text-box .title {
     font-size: 36px;
     margin: 0;
 }
 
-.text-box .subtitle {
+.section-header .text-box .subtitle {
     font-size: 24px;
     margin: 0;
 }
 
-.text-box .buttons-box {
+.section-header .text-box .buttons-box {
     margin-top: 20px;
 }
 
-.text-box .buttons-box button {
+.section-header .text-box .buttons-box button {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -59,7 +56,7 @@ body {
     margin: 0 10px;
 }
 
-.text-box .buttons-box button:hover {
+.section-header .text-box .buttons-box button:hover {
     background-color: #cc8400;
 }
 
