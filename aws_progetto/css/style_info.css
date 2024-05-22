@@ -64,7 +64,7 @@ body {
 .main-container {
     text-align: center;
     padding: 40px;
-    background-color: rgba(6, 63, 218, 0.935); /* Colore di sfondo blu */
+    background-color: rgba(6, 63, 218, 0.335); /* Colore di sfondo blu */
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
