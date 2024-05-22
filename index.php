@@ -32,16 +32,6 @@ unset($_SESSION['error_message']);
     </style>
 </head>
 <body>
-    <?php if (!$error_message): ?>
-        <div class="error-popup" id="errorPopup"><?php echo $error_message; ?></div>
-        <script>
-            document.getElementById('errorPopup').style.display = 'block';
-            setTimeout(function() {
-                document.getElementById('errorPopup').style.display = 'none';
-            }, 5000); // Nasconde il messaggio dopo 5 secondi
-        </script>
-    <?php endif; ?>
-    
     <h1>LOGIN CLIENTE</h1>
     <form method="post" action="lgAWS.php">
         <input type="email" name="email" placeholder="email" required>
