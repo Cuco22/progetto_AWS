@@ -324,6 +324,32 @@ git pull
 
 ## finished!! 🎉🎉
 
+#WAIT, but what if I wanted to adapt it to HTTPS? 🛡️
+
+- it's not that complicated, you just need to install and implement your certificates. 📜🤗
+## So, let's begin.
+
+1. as first step create your certificates with the following commands:
+```bash
+mkdir ~/ssl
+```
+```bash
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ~/ssl/key.pem -out ~/ssl/cert.pem
+```
+Attention, at the end of this operation the CLI will ask you for some information which will be incorporated into your certification;
+So I advise you to pay attention to what you type because it will be important for later. ⚠️
+
+- for the next step you need to combine the information you just entered into your ~/ssl certification to complete this command which will allow you to implement it in your proxy and containers.
+
+```bash
+sudo docker run -d --name proxyapp --link nginx:proxyapp -p 443:443 -e DOMAIN=*.exemple.amazonaws.com -e TARGET_PORT=80 -e TARGET_HOST=nginx -e SSL_PORT=443 -v ~/ssl:/etc/nginx/certs --restart unless-stopped fsouza/docker-ssl-proxy
+```
+
+What I reported is just an example. 
+
+# FINISHED! (for real this time) 🆘🎆
+
+
 
 # About me 👤
 Link to instagram:  https://www.instagram.com/lucaa.cuco/
