@@ -9,7 +9,7 @@ body {
     align-items: center;
     background-image: linear-gradient(rgba(161, 36, 178, 0,371), rgba(161, 36, 178)), url("/aws_progetto/css/futurism.jpg");
     background-size: cover;
-    overflow-x: hidden; /* Impedisce lo scrolling orizzontale */
+    overflow-x: hidden; 
 }
 
 .section-header {
