@@ -7,7 +7,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgb(161, 36, 178, 0.371);
     background-size: cover;
     overflow-x: hidden; /* Impedisce lo scrolling orizzontale */
@@ -70,7 +69,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: -15vh; /* Regola il posizionamento relativo all'intestazione */
+    margin-top: 10vh; /* Regolato il margine superiore per separare dal titolo */
     position: relative;
     z-index: 0; /* Assicura che il contenuto principale sia dietro all'intestazione */
 }
