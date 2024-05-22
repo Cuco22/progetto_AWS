@@ -1,8 +1,12 @@
-
+body {
+	background-color: rgb(58, 4, 94);
+	overflow-x: hidden;
+}
 
 #header {
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(110, 0, 0)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(58, 4, 54)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
 }
+
 
 .section-header {
   width: 100%;
