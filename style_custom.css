@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: linear-gradient(rgba(161, 36, 178, 0.371), rgba(161, 36, 178));
+    background-color: rgba(161, 36, 178);
     background-size: cover;
     overflow-x: hidden; /* Impedisce lo scrolling orizzontale */
 }
