@@ -27,7 +27,7 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
 
     <div class="main-container">
         <h1>About Me</h1>
-        <p>Ciao! Sono uno sviluppatore appassionato di tecnologia e innovazione. Ho una forte passione per il mondo del cloud computing e della programmazione web. Questo sito è stato creato per condividere le mie conoscenze e il mio percorso di apprendimento con AWS.</p>
+        <p>Ciao! Sono uno studente del quinto anno di formazione superiore in indirizzo informatico e telecomunicazioni presso una scuola nella provincia di Milano 📍. Questo sito è stato creato per condividere le mie conoscenze e il mio percorso di apprendimento con AWS.</p>
 
         <h2>Il Programma</h2>
         <p>Questo sito è stato sviluppato utilizzando PHP, HTML, CSS e JavaScript. L'obiettivo principale è stato quello di creare una piattaforma dinamica e interattiva per dimostrare le mie competenze in questi linguaggi di programmazione e nell'utilizzo di servizi cloud come AWS.</p>
