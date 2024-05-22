@@ -33,7 +33,9 @@ $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['
         <hr>
         <br>
         <p>Per visualizzare nello specifico come ho fatto a configurare le impostazioni e il server su AWS, <a href="https://github.com/Cuco22/progetto_AWS/blob/main/README.md">clicca qui!</a>.</p>
-        
+
+        <br>
+        <br>
         <h2>Ti va di lasciare un commento? 🐦‍⬛</h2>
         <form id="commentForm">
             <textarea id="commentInput" rows="4" cols="50" placeholder="Scrivi qui il tuo commento..."></textarea>
