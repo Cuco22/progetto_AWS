@@ -1,7 +1,7 @@
 <?php
 include 'connect.php';
 session_start();
-echo 'sono entrato';
+
 $email = isset($_SESSION['password']) && isset($_SESSION['email']) ? $_SESSION['email'] : 'Utente';
 ?>
 
