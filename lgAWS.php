@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     exit();
 } else {
     echo "L'utente non esiste! Non è possibile eseguire il login :(";
-    header("Location: index.php");
+    //header("Location: index.php");
     exit();
 }
 
