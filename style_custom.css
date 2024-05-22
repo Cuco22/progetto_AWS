@@ -5,7 +5,7 @@ body {
 
 #header {
 	background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(58, 4, 54)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
-	height: 30%;
+	height: 300px;
 }
 
 
