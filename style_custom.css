@@ -71,7 +71,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 90%;
-    margin-top: -10vh; /* Adjusted top margin to separate from header */
+    margin-top: 10vh; /* Adjusted top margin to separate from header */
     position: relative;
     z-index: 0; /* Ensure main content is behind header */
 }
