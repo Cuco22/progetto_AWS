@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(145, 42, 184, 0.8);
+    background-color: rgba(161, 36, 178, 0.371); /* Stessa tonalità usata nell'header */
     background-size: cover;
     overflow-x: hidden; 
 }
@@ -26,6 +26,7 @@ body {
     position: relative;
     z-index: 1; /* Per sovrapporre al contenuto principale */
 }
+
 
 .section-header .text-box {
     max-width: 600px;
