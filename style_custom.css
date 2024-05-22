@@ -2,48 +2,50 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(58, 4, 94);
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
-}
-
-#header {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg");
-    height: 300px;
-    background-position: center;
-    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .section-header {
     width: 100%;
-    min-height: 100vh;
-    position: relative;
-}
-
-.text-box {
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/css/sfondoSitoAWS.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #fff;
 }
 
-.text-box .title {
+.section-header .text-box {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.section-header .text-box .title {
     font-size: 36px;
     margin: 0;
 }
 
-.text-box .subtitle {
+.section-header .text-box .subtitle {
     font-size: 24px;
     margin: 0;
 }
 
-.text-box .buttons-box {
+.section-header .text-box .buttons-box {
     margin-top: 20px;
 }
 
-.text-box .buttons-box button {
+.section-header .text-box .buttons-box button {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -54,54 +56,54 @@ body {
     margin: 0 10px;
 }
 
-.text-box .buttons-box button:hover {
+.section-header .text-box .buttons-box button:hover {
     background-color: #cc8400;
 }
 
 .main-container {
     text-align: center;
     padding: 40px;
-    background-color: #4b0082;
+    background-color: rgba(75, 0, 130, 0.8); /* Cambiato colore di sfondo */
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 100%;
-    margin: -100px auto 0 auto; /* Position below the header */
+    width: 90%;
+    margin-top: -15vh; /* Regola il posizionamento relativo all'intestazione */
 }
 
-.main-container h1 {
+h1 {
     font-size: 36px;
     color: #fff;
     margin-bottom: 20px;
 }
 
-.main-container p {
+p {
     font-size: 18px;
     color: #dcdcdc;
     margin-bottom: 20px;
 }
 
-.main-container a {
+a {
     color: #ffa500;
     text-decoration: none;
     font-weight: bold;
 }
 
-.main-container a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.main-container h2 {
+h2 {
     font-size: 28px;
     color: #dcdcdc;
     margin-top: 40px;
 }
 
-.main-container form {
+form {
     margin-top: 20px;
 }
 
-.main-container textarea {
+textarea {
     width: 100%;
     padding: 10px;
     border-radius: 8px;
@@ -109,7 +111,7 @@ body {
     font-size: 16px;
 }
 
-.main-container button {
+button {
     margin-top: 10px;
     padding: 10px 20px;
     border: none;
@@ -120,7 +122,7 @@ body {
     cursor: pointer;
 }
 
-.main-container button:hover {
+button:hover {
     background-color: #cc8400;
 }
 
