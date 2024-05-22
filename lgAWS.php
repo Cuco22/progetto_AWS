@@ -18,14 +18,13 @@ $query = "SELECT * FROM utente WHERE username = '$email' AND password = '$passwo
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
-    //$_SESSION['logged'] === true;
-    //$_SESSION['email'] = $email;
-    //header("Location: sitoAWS.php");
-    //exit();
-    echo 'ciao è giusto!';
+    $_SESSION['logged'] === true;
+    $_SESSION['email'] = $email;
+    header("Location: sitoAWS.php");
+    exit();
 } else {
-    //echo "L'utente non esiste! Non è possibile eseguire il login :(";
-    //header("Location: index.php");
+    echo "L'utente non esiste! Non è possibile eseguire il login :(";
+    header("Location: index.php");
     exit();
 }
 
