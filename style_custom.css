@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+	background-color: rgb(37, 34, 34);
+	overflow-x: hidden;
+}
+
+#header {
+	background-image: linear-gradient(rgba(0, 0, 0, .6), rgb(37, 34, 34)), url("/aws_progetto/php/sfondoSitoAWS.jpg");
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -9,8 +18,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(58, 4, 54)), url("/aws_progetto/php/sfondoSitoAWS.jpg") no-repeat center center fixed;
-    background-size: cover;
 }
 
 .section-header {
