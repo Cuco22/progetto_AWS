@@ -52,5 +52,7 @@ unset($_SESSION['error_message']);
         <br>
         <input type="submit" value="login">
     </form>
+    <br>
+    a href="register.php" class="register-link">Register</a>
 </body>
 </html>
