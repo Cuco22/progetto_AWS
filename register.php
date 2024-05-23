@@ -10,7 +10,6 @@
     <div class="form-container">
         <h1>Registrati</h1>
         <br>
-        <br>
         <form action="registerAWS.php" method="post">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
