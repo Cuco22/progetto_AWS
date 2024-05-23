@@ -12,6 +12,8 @@
         <form action="registerAWS.php" method="post">
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <br>
             <input type="submit" value="Registrati">
         </form>
     </div>
