@@ -16,10 +16,9 @@
             <br>
             <br>
             <input type="submit" value="Registrati">
-            <br>
-            <br>
-                <a href="index.php" class="register-link">ritorna al login</a>
         </form>
+        <br>
+        <a href="index.php" class="register-link">ritorna al login</a>
     </div>
 </body>
 </html>
