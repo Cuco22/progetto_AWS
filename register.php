@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrazione</title>
+    <title>Registrati utente.</title>
     <link rel="stylesheet" href="/aws_progetto/css/style_register.css">
 </head>
 <body>
