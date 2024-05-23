@@ -79,7 +79,9 @@ input[type="submit"]:hover {
     text-decoration: none; /* Rimuove la sottolineatura predefinita */
     display: inline-block; /* Assicura che il padding funzioni come previsto */
     text-align: center;
+    padding-left: 40%;
 }
+
 
 .register-link:hover {
     background-color: #cc8400;
