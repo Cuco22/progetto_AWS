@@ -34,6 +34,7 @@ unset($_SESSION['error_message']);
     </style>
 </head>
 <body>
+    <br>
     <h1>LOGIN CLIENTE</h1>
 
     <?php if ($error_message): ?>
