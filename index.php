@@ -53,6 +53,6 @@ unset($_SESSION['error_message']);
         <input type="submit" value="login">
     </form>
     <br>
-    a href="register.php" class="register-link">Register</a>
+    <a href="register.php" class="register-link">Non hai un account? registrati qui</a>
 </body>
 </html>
