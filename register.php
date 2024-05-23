@@ -16,8 +16,10 @@
             <br>
             <br>
             <input type="submit" value="Registrati">
+            <br>
+            <br>
+                <a href="index.php" class="register-link">ritorna al login</a>
         </form>
     </div>
-    <a href="index.php" class="register-link">ritorna al login</a>
 </body>
 </html>
