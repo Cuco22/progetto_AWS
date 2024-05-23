@@ -69,14 +69,14 @@ input[type="submit"]:hover {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
-    background-color: #ffa500;
-    color: blue;
+    background-color: blue;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none; /* Rimuove la sottolineatura predefinita */
     display: inline-block; /* Assicura che il padding funzioni come previsto */
     text-align: center;
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 
