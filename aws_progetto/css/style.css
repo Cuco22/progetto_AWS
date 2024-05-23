@@ -70,7 +70,6 @@ input[type="submit"]:hover {
     font-size: 16px;
     cursor: pointer;
     text-decoration: none; /* Rimuove la sottolineatura predefinita */
-    margin: 0 10px;
     display: inline-block; /* Assicura che il padding funzioni come previsto */
 }
 
